@@ -1,23 +1,73 @@
 body{
-    background: linear-gradient(90deg, rgb(115, 210, 252) 0%, rgb(139, 102, 241) 100%);
+    background: linear-gradient(90deg, rgb(115, 210, 252) 0%, rgb(140, 133, 162) 100%);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
+    margin-bottom: 30px;
     text-align: center;
+}
+
+h1{
+   
     text-shadow: 2px 4px 4px rgba(46, 54, 173, 0.6);
+    font-size: 36px;
+    line-height: 1.5
 }
 .container{
-    margin:  auto;
+    /* text-align: center; */
+    margin: 120px auto;
+    max-width: 600px;
+
+   
+}
+form{
+    padding: 30px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    margin-bottom: 30px;
+
+}
+.prompt-input{
+    padding:16px;
+    border:1px solid rgb(39, 33, 66, 0.5);
+    width: 80%;
+    font-size: 16px;
+    border-radius: 50px;
+    line-height: 20px;
+}
+.submit-btn{
+    margin-left: 10px;
+    background-color: rgb(95, 46, 131);;
+    padding: 14px 24px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    width: 150px;
+}
+.quote-section{
+    background-color: white;
+    font-size: 16px;
+    padding: 20px;
+    line-height: 2;
+    /* border-radius: 10px; */
+    border-left: 3px solid rgb(95, 46, 131);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 footer{
-    text-align: center;
-    font-size: 18px;
     color: rgb(27, 26, 26);
-    font-weight: 700;
+    font-size: 13px;
+    margin-top: 30px;
     text-shadow: 2px 4px 4px rgba(46, 54, 173, 0.6);
+    text-align: center;
+   
 
 }
 a{
     text-decoration: none;
+    color:  rgb(95, 46, 131);;
 }
 
