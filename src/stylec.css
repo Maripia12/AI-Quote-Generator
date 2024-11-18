@@ -57,6 +57,9 @@ form{
     border-left: 3px solid rgb(95, 46, 131);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.quote-section strong{
+    color:rgb(95, 46, 131);
+}
 footer{
     color: rgb(27, 26, 26);
     font-size: 13px;
