@@ -2,14 +2,19 @@ body{
     background: linear-gradient(90deg, rgb(115, 210, 252) 0%, rgb(139, 102, 241) 100%);
 }
 
-.title{
+header{
     text-align: center;
+    text-shadow: 2px 4px 4px rgba(46, 54, 173, 0.6);
+}
+.container{
+    margin:  auto;
 }
 footer{
     text-align: center;
     font-size: 18px;
     color: rgb(27, 26, 26);
     font-weight: 700;
+    text-shadow: 2px 4px 4px rgba(46, 54, 173, 0.6);
 
 }
 a{
