@@ -17,16 +17,18 @@ function generateQuote(event){
     console.log('clicked')
    
     let userInputtElement = document.querySelector('#user-prompt')
+    
+    let apiKey = 'a03e62525c5f6b05f4bt9c6f57oe33ff'
+    let context = "You are an amazing quote generator. Please display answer in one html line and separate each line with a <br />. Sign the quote inside a <strong> element"
+    let prompt = `Generate a quote about ${userInputtElement.value}`
+    let apiUrl= `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`
+
     let quoteDisplayElement = document.querySelector('#quote-display')
     quoteDisplayElement.classList.remove("hidden")
     quoteDisplayElement.innerHTML = `<div class="generating"> ⏳ Generating a quote about ${userInputtElement.value}</div>`
 
-    let apiKey = 'a03e62525c5f6b05f4bt9c6f57oe33ff'
-    let context = "You are an amazing quote generator. Please display quote in one html line and separate each line with a <br />. Sign the quote inside a <strong> element"
-    let prompt = `Generate a quote about ${userInputtElement.value}`
-    let apiUrl= `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`
 
-    axios(apiUrl).then(displayQuote)
+    axios.get(apiUrl).then(displayQuote)
     console.log(prompt)
 
 }
